@@ -8,7 +8,7 @@
     2일차 - 기초 + 변수
     3일차 - 변수+형변환+연산자
     
-    > 그외. ## 응용 문제해결 공간
+    * 그외  응용 문제해결 공간
       01_Char_StringChangeInt
       02_Char_StringChangeInt02
 
