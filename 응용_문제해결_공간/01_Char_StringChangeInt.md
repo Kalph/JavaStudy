@@ -6,9 +6,9 @@
 이 중 뒷자리 첫 번째 숫자를 통해 성별을 구분한다.(1,3이 남자 2,4는여자)
 <br/><br/><br/>
 
-# <처음 문제를 푼 방식>
+## <처음 문제를 푼 방식>
 
-
+<br/>
 ```Java
 	public void Private() { 
 		Scanner sc = new Scanner(System.in);
@@ -20,9 +20,9 @@
 		System.out.println(result); 
 	 }
 ```
+<br/><br/><br/>
 
-
-# 문제 풀이
+## 문제 풀이
 
 
 ->  String 자료형 SSN에 입력한 주민번호를 저장한 후
@@ -31,7 +31,7 @@ char a = SSN.charAt(7);  구문에 문자 하나를 저장하여 이후 문자�
 
 ​
 
-여기서 주의할점은
+* 여기서 주의할점은
 
 자바에서 문자열은 == 로 비교를 하지 못한다는 것이다. 이는 주소값을 비교하는 것인데
 
@@ -47,11 +47,10 @@ String는 문자 배열 형태라고 생각하면 된다.
 
 
 -> 둘의 차이가 있다는 정도로 이해하면 좋다.
+<br/><br/><br/>
 
 
-
-# <문제를 다르게 푼 방식>
-
+## <문제를 다르게 푼 방식>
 
 
 위에서의 문제 답안은
@@ -60,6 +59,7 @@ String b = (a == (int)1 || a == (int)3) ? "남자" : "여자"; // (int)는 구�
 
 위의 코드와 같이 정수형태로 비교할 수는 없을까. 라는 의문으로 이어진다.
 
+<br/>
 ```Java
 	public void Private() { 
 		Scanner sc = new Scanner(System.in);
@@ -73,6 +73,7 @@ String b = (a == (int)1 || a == (int)3) ? "남자" : "여자"; // (int)는 구�
 		System.out.println(b);
 	 }
 ```
+<br/>
 
  따라서 https://codeday.me/ko/qa/20190306/10766.html 해당 링크를 참고하여
 
@@ -82,8 +83,7 @@ String b = (a == (int)1 || a == (int)3) ? "남자" : "여자"; // (int)는 구�
 
 
 이 외에도 여러 차이를 비교해보고자 다양한 코드를 작성해보았다.
-
-
+<br/><br/>
 ```Java
 
 	public void private1() {
@@ -106,10 +106,10 @@ String b = (a == (int)1 || a == (int)3) ? "남자" : "여자"; // (int)는 구�
 		System.out.printf("%d\n",c);
 	}
  ```
-
+<br/><br/><br/>
 
 # 요약.
-
+<br/>
 
 자바에서의 char과 String이 저장되는 형태는?
 
@@ -120,7 +120,7 @@ String b = (a == (int)1 || a == (int)3) ? "남자" : "여자"; // (int)는 구�
 
 + String는 객체를 생성할 때마다 주소값이 달라지므로 equals()를 통해서 두 개의 문자열이 동일한 값을 가지고 있는지 비교해야 할 필요가 있다.
 
-
+<br/>
 - equals
 
 equals는 두개의 문자열이 동일한 값을 가지고 있는지를 비교하여 결과값을 리턴한다.
