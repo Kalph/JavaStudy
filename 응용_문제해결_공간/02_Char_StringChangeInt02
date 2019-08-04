@@ -1,4 +1,4 @@
-<pre><code>
+```Java
   public void myhome {
 		String room = "123456789";
 		//int temRoom = Character.getNumericValue(room); 
@@ -11,4 +11,4 @@
 		int livingRoom2 = Integer.parseInt(room);
 		System.out.printf("%d\n", livingRoom2);
 	}
- </code></pre>
+```
