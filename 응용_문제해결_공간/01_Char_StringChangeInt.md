@@ -7,7 +7,7 @@
 
 ## <처음 문제를 푼 방식>
 
-<br/>
+
 ```Java
 	public void Private() { 
 		Scanner sc = new Scanner(System.in);
