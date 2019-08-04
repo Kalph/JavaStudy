@@ -89,7 +89,7 @@ public class Computer {
 
 <br/><br/>
 
-### 변수 
+## 변수 
 
 <br/>
 
@@ -101,7 +101,7 @@ public class Computer {
 
 변수는 선언한 뒤 초기화를 해줘야 한다.
 
-<br/><br/>
+<br/>
 
 ```Java
 package my.house.room;
