@@ -1,4 +1,4 @@
-<문제>
+# <문제>
 
 ​
 
@@ -8,8 +8,9 @@
 
 ​
 
-<처음 문제를 푼 방식>
+# <처음 문제를 푼 방식>
 
+```Java
 	public void Private() { 
 		Scanner sc = new Scanner(System.in);
 		System.out.print("주민번호를 입력하세요(-포함) : "); 
@@ -19,7 +20,8 @@
 	  
 		System.out.println(result); 
 	 }
-  문제 풀이
+```
+# 문제 풀이
 
 ->  String 자료형 SSN에 입력한 주민번호를 저장한 후
 
@@ -35,23 +37,18 @@ String는 문자 배열 형태라고 생각하면 된다.
 
 * String은 기본 자료형이 아니다.
 
-​
 
 -> char가 여러개 붙은 문자열을 활용하기 위해 쉽게 제공되는 것이 String 클래스이다.
 
-​
 
 -> 기본 자료형은 메모리 공간안에 값이 들어가나, String는 주소값이 들어가는 것이다.
 
-​
 
 -> 둘의 차이가 있다는 정도로 이해하면 좋다.
 
-​
 
-​
 
-<문제를 다르게 푼 방식>
+# <문제를 다르게 푼 방식>
 
 ​
 
@@ -61,6 +58,7 @@ String b = (a == (int)1 || a == (int)3) ? "남자" : "여자"; // (int)는 구�
 
 위의 코드와 같이 정수형태로 비교할 수는 없을까. 라는 의문으로 이어진다.
 
+```Java
 	public void Private() { 
 		Scanner sc = new Scanner(System.in);
 		System.out.print("주민번호를 입력하세요(-포함) : "); 
@@ -72,17 +70,18 @@ String b = (a == (int)1 || a == (int)3) ? "남자" : "여자"; // (int)는 구�
 		String b = (a == (int)1 || a == (int)3) ? "남자" : "여자"; // (int)는 구분을 위해 표기
 		System.out.println(b);
 	 }
+```
+
  따라서 https://codeday.me/ko/qa/20190306/10766.html 해당 링크를 참고하여
 
 이는 String -> int가 되는 것이 아닌 char -> int형으로 수정하는 방법이다.(어쩌면 뇌피셜..)
 
 푼 결과 Character.getNumericValue(); 메서드를 사용하는 것으로 해결이 되었다.
 
-​
 
 이 외에도 여러 차이를 비교해보고자 다양한 코드를 작성해보았다.
 
-​
+```Java
 
 	public void private1() {
 		String a="1";
@@ -103,26 +102,23 @@ String b = (a == (int)1 || a == (int)3) ? "남자" : "여자"; // (int)는 구�
 		int c = Integer.parseInt(b); // 이후 추출한 문자를 String -> int형으로 변환시킴.
 		System.out.printf("%d\n",c);
 	}
- ​
+ ```
 
-요약.
+# 요약.
 
-​
 
 자바에서의 char과 String이 저장되는 형태는?
 
--> char은 기본 자료형 변수다.
+1. char은 기본 자료형 변수다.
 
--> String는 여러가지 기능을 제공하는 String 클래스이다. 기본 자료형이 아니므로 메모리 값에 공간이 들어가지 않으며, 주소값에 들어간다.
+2. String는 여러가지 기능을 제공하는 String 클래스이다. 기본 자료형이 아니므로 메모리 값에 공간이 들어가지 않으며, 주소값에 들어간다.
 
-​
 
 + String는 객체를 생성할 때마다 주소값이 달라지므로 equals()를 통해서 두 개의 문자열이 동일한 값을 가지고 있는지 비교해야 할 필요가 있다.
 
-​
 
-+ equals
+- equals
 
 equals는 두개의 문자열이 동일한 값을 가지고 있는지를 비교하여 결과값을 리턴한다.
 
-​
+
