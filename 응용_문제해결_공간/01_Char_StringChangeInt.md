@@ -75,7 +75,7 @@ String는 문자 배열 형태라고 생각하면 된다.
 ```
 
 
- 따라서 syntax:[해당 링크](https://codeday.me/ko/qa/20190306/10766.html) 참고하여
+ 따라서 [해당 링크](https://codeday.me/ko/qa/20190306/10766.html) 참고하여
 
 이는 String -> int가 되는 것이 아닌 char -> int형으로 수정하는 방법이다.(어쩌면 뇌피셜..)
 
