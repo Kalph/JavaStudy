@@ -19,13 +19,13 @@ for 문과 while문으로 나눠짐
 <br/>
   
 ```Java
- 	public void myHome2() {
-		int i = 0;
-		while (i < 10) { 
-			System.out.println("어후 어서오세요.");
-			i++;
-		}
+ public void myHome2() {
+	int i = 0;
+	while (i < 10) { 
+		System.out.println("어후 어서오세요.");
+		i++;
 	}
+}
 ```
 
 <br/>
