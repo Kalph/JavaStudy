@@ -85,6 +85,9 @@ api - 중 자바단에서 열리는 clone의 앞에 native는 자바에서 개�
 
 ### 깊은 복사 - 동일한 배열을 생성하여 배열의 내부 값들을 복사
 
+<br/>
+
+```Java
 	public void myHome() {
 		int[] origin = { 1, 2, 3, 4, 5 };
 
@@ -92,6 +95,9 @@ api - 중 자바단에서 열리는 clone의 앞에 native는 자바에서 개�
 		for (int i = 0; i < origin.length; i++) {
 			copy[i] = origin[i];
 		}
+```
+<br/>
+
  기본적으로 깊은 복사를 하려면 위와 같이 for문을 돌려 copy의 인덱스에 origin의 값을 하나씩 넣어주는 방법이 있다.
 
 <br/>
