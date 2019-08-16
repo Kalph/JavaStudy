@@ -13,7 +13,7 @@ JavaStudy
 6일차 - [반복문+배열](https://github.com/Mulbua/JavaStudy/tree/master/6Day) <br/>
 7일차 - [배열+배열복사](https://github.com/Mulbua/JavaStudy/tree/master/7Day) <br/>
 8일차 - [이차원 배열](https://github.com/Mulbua/JavaStudy/tree/master/8Day) <br/>
-(9~10)일차 - [객체(01~02)](https://github.com/Mulbua/JavaStudy/tree/master/9Day) <br/>
+(9~10)일차 - [객체(01~02)](https://github.com/Mulbua/JavaStudy/tree/master/9Day_10Day) <br/>
 11일차 - [객체배열(코드)](https://github.com/Mulbua/JavaStudy/tree/master/11Day) <br/>
     
 * 그외  응용 문제해결 공간 <br/>
