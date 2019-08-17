@@ -14,19 +14,23 @@ if(str.equalsIgnoreCase("Y")) {
 
 
 ```Java
-package my.room.controller;
+package com.kh.practice2.controller;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-import my.room.model.vo.Product;
+import com.kh.practice2.model.vo.Product;
 
 public class ProductController {
 	private Product[] pro = null;
 	public static int count;
+	
 	Scanner sc = new Scanner(System.in);
 	{
 		pro = new Product[10];
+//		pro[0] = new Product(1,"2",3,4);
+//		pro[1] = new Product(2,"3",3,4);
+//		pro[2] = new Product(3,"4",3,4);
 	}
 	
 	public void mainMenu() {
@@ -47,6 +51,7 @@ public class ProductController {
 			case 4: modifyProduct(); break;
 			case 5:	productSearch(); break;
 			case 9: System.out.println("프로그램이 종료됩니다."); return;
+			
 			}
 			
 		}while(!(num==9));
@@ -78,6 +83,7 @@ public class ProductController {
 			if(pro[i]==null) {
 				continue;
 			}
+			// 위 구문 세줄 주석 확인
 			System.out.println(pro[i].information());
 		}
 	}
@@ -95,20 +101,20 @@ public class ProductController {
 			if(pro[i].getpId()==search) {
 				System.out.println("삭제되었습니다.");
 				pro[i]=null;
-				chk=true;
+				chk=true; // X
 				ArrayLeftSort();
 				return;
 //				pro[i] = null;
 //				ArrayLeftSort();
 //				return;
 			}
-			
-			if(chk==false) {
-				System.out.println("제품 번호가 잘못 입력되었습니다. 다시 입력하세요.");
-				productDelete();
-			}
 		}
-	}
+		
+		if(chk==false) {
+			System.out.println("제품 번호가 잘못 입력되었습니다.");
+			productDelete();
+		}
+}
 	
 	public void modifyProduct() {
 		int num=0;
@@ -183,12 +189,13 @@ public class ProductController {
 			if(pro[chk]==null) {
 				pro[chk]=pro[chk+1];
 				pro[chk+1]=null;
-				count--;
 			}
 			chk++;
 		}
+		count--;
 	}
 }
+
 ```
 
 <br/>
