@@ -47,9 +47,9 @@ super()를 통해 부모 객체에서 만들어진 name, bath, mirror, price의 
 
 <br/>
 
-* - 새로운 클래스 작성 가능
+* 새로운 클래스 작성 가능
 
-* - 코드를 효율적인 관리 -> 유지보수 기여
+* 코드를 효율적인 관리 -> 유지보수 기여
 
 https://codedragon.tistory.com/6287
 
