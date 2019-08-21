@@ -61,8 +61,7 @@ Parent p = (Parent)new Child();
 
 <br/>
 
-[하나의 타입으로 다양한 실행 결과를 얻을 수 있으며 객체를 부품화하여 유지 보수를 용이하게 한다.]
-(https://blog.naver.com/PostView.nhn?blogId=heartflow89&logNo=220979244668&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
+[하나의 타입으로 다양한 실행 결과를 얻을 수 있으며 객체를 부품화하여 유지 보수를 용이하게 한다.](https://blog.naver.com/PostView.nhn?blogId=heartflow89&logNo=220979244668&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
 
 <br/>
 
