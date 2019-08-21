@@ -24,7 +24,7 @@ JavaStudy
  [02_Char_StringChangeInt02](https://github.com/Mulbua/JavaStudy/blob/master/%EC%9D%91%EC%9A%A9_%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0_%EA%B3%B5%EA%B0%84/02_Char_StringChangeInt02.md) <br/>
  
 * miniProject <br/>
-[인생 강화하기 게임](https://github.com/Mulbua/JavaStudy/tree/master/miniProject/%EC%9D%B8%EC%83%9D%20%EA%B0%95%ED%99%94%ED%95%98%EA%B8%B0)<br/>
+[인생 강화하기 게임](https://github.com/Mulbua/JavaStudy/tree/master/miniProject)<br/>
  
 
 
