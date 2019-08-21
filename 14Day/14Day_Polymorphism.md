@@ -67,6 +67,8 @@ Parent p = (Parent)new Child();
 
 * instanceof 연산자 - 클래스 타입이 일치하면 true, 다르면 false를 리턴하는 연산자
 
+<br/>
+
 ## 정적 바인딩과 동적 바인딩
 
 <br/>
