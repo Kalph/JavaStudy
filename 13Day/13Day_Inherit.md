@@ -23,7 +23,7 @@ public class myRoom1 extends Livingroom{
 
 <br/>
 
-부모 객체의 생성자를 호출하기 위해선 super();를 사용한다
+부모 객체의 생성자를 호출하기 위해선 super();를 사용한다.
 
 위의 코드는 부모 객체에서 생성자를 포함한 set,get이 만들어졌다는 가정을 두고 쓴 코드이다.
 
