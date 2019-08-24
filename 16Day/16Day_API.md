@@ -1,6 +1,8 @@
 API
 ===========
 
+<br/>
+
 - Application Programming Interface(응용 프로그램 프로그래밍 인터페이스)
 
 자바는 각종 클래스와 메소드등의 다양한 정보를 API 문서를 통해 제공한다.
@@ -26,6 +28,8 @@ API
 <br/>
 
 ## 실습
+
+<br/>
 
 ```java
 String myHome1 = new String("hello");
@@ -97,6 +101,8 @@ myHome1과 myHome2는 그 문자열의 주소를 가지게 되는 것이다.
 <br/>
 
 ## @Deprecated
+
+<br/>
 
 자바 API에서 Deprecated라는 단어를 찾아볼 수 있는데 이는 클래스나 메소드에 @Deprecated가 붙어 있다면 
 
