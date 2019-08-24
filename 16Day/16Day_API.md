@@ -9,9 +9,9 @@ API
 
 -> 구글링을 통해 java api (버전)을 입력하는 것으로 이러한 API를 볼 수 있다.
 
-또는 (다음 링크)[https://moomini.tistory.com/5]의 방법과 같이 접속할 수 있다.
+또는 [다음 링크](ttps://moomini.tistory.com/5)의 방법과 같이 접속할 수 있다.
 
-
+<br/>
 
 > java.lang : 자바 프로그래밍을 위한 가장 기본적인 패키지와 클래스를 포함하고 있습니다.
 
