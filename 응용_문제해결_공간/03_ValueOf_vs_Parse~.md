@@ -1,3 +1,4 @@
+
 ```java
 String num1 = "hi";
 ```
@@ -58,7 +59,7 @@ Integer cp2 = new Integer(Integer.parseInt(a));
 
 <br/>
 
-직관적으로는 Integer cp2에 저장을 하려면 위의 코드 처럼 new Integer을 붙여주는 것이 맞을 것이다.
+직관적으로는 Integer cp2에 저장을 하려면 위의 코드 처럼 new Integer()을 붙여주는 것이 맞을 것이다.
 
 <br/>
 
