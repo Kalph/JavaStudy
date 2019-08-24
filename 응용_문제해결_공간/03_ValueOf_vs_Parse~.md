@@ -104,9 +104,9 @@ System.out.println(num1);
 // "123" -> 123으로 수정함으로서 해결 가능
 
 String str = "123";
-// Ineger num3 = str;
+// Integer num3 = str;
 // 위와 마찬가지의 오류. 
-// Ineger num3 = str; -> Integer.parseInt(str); 로 수정함으로서 해결 가능
+// Integer num3 = str; -> Integer.parseInt(str); 로 수정함으로서 해결 가능
 ```
 
 <br/>
