@@ -26,7 +26,8 @@ JavaStudy
 * 그외 응용 문제해결 공간 <br/>
  [01_Char_StringChangeInt](https://github.com/Mulbua/JavaStudy/blob/master/%EC%9D%91%EC%9A%A9_%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0_%EA%B3%B5%EA%B0%84/01_Char_StringChangeInt.md) <br/>
  [02_Char_StringChangeInt02](https://github.com/Mulbua/JavaStudy/blob/master/%EC%9D%91%EC%9A%A9_%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0_%EA%B3%B5%EA%B0%84/02_Char_StringChangeInt02.md) <br/>
- [03_ValueOf_vs_Parse-](https://github.com/Mulbua/JavaStudy/blob/master/%EC%9D%91%EC%9A%A9_%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0_%EA%B3%B5%EA%B0%84/03_ValueOf_vs_Parse~.md)<br/>
+ [03_ValueOf_vs_Parse-](https://github.com/Mulbua/JavaStudy/blob/master/%EC%9D%91%EC%9A%A9_%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0_%EA%B3%B5%EA%B0%84/03_ValueOf_vs_Parse~.md) <br/>
+ [04 getClass() vs instanceof](https://github.com/Mulbua/JavaStudy/blob/master/%EC%9D%91%EC%9A%A9_%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0_%EA%B3%B5%EA%B0%84/04_getClass()_vs_instanceof.md) <br/>
  
 * miniProject <br/>
 [인생 강화하기 게임](https://github.com/Mulbua/JavaStudy/tree/master/miniProject)<br/>
