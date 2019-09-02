@@ -74,7 +74,7 @@ public class test {
 			e.printStackTrace();
 		} finally {
 			try {
-                bw.close();
+                		bw.close();
 				isw.close(); // 이 부분은 생략 가능. 
                              // bw.close() 내부적으로 안에서 사용하고 있는 스트림을
                              // close() 하라고 호출하기 때문. 
