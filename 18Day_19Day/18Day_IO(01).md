@@ -452,7 +452,7 @@ fw.write("my\nRoom", 0, 5); // my\nRo 출력 확인
 ```java
 fw.write("my\nRoom", 0, 7); // \n도 하나의 문자로 인식 따라서 0의 위치부터 7개의 문자를 출력
 
-fw.write(my\nRoom",1,7); // 오류 발생 -> StringIndexOutOfBoundsException - 
+fw.write("my\nRoom",1,7); // 오류 발생 -> StringIndexOutOfBoundsException - 
 // 1의 위치부터 읽어온다면 즉, y \n R o o m 은 총 6개임. 7번째 위치의 문자는 존재X
 
 char[] cArr = { 'i', 'a', 'm','i','s' };
