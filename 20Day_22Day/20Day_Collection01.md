@@ -3,7 +3,7 @@
 * [컬렉션](#컬렉션collection) </br> 
 * [주요 인터페이스](#주요-인터페이스) </br>
 * [ArrayList 실습](#ArrayList-실습) </br>
-* [제네릭스](#제네릭스) </br>
+* [제네릭스](#제네릭스) </br> </br>
 
 ## 컬렉션(Collection)
 
