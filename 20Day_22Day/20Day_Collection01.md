@@ -55,7 +55,7 @@
 
 </br>
 
-myRoom 객체 생성.
+myRoom 클래스 생성.
 
 생성자 및 get,set, toString().
 
