@@ -115,9 +115,9 @@ public class Run {
 
 <br/>
 
-* Comparable - 일반적인 정렬 - compareTo() 메서드를 구현
+* Comparable - 일반적인 정렬 - compareTo() 메서드를 구현.
 
-* Comparator - 특정한 정렬 - compare() 메서드를 구현
+* Comparator - 특정한 정렬 - compare() 메서드를 구현.
 
 <br/>
 
@@ -127,8 +127,8 @@ Comparable은 Collections.sort()를 사용할 때 매개변수를 두 개를 받
 
 <br/>
 
-> Comparable - 이 인터페이스를 구현한 객체 스스로에게 부여하는 한 가지 기본 정렬 규칙을 설정하는 목적으로 사용한다.
-> Comparator - 이 인터페이스를 구현한 클래스는 정렬 규칙 그 자체를 의미하며, 기본 정렬 규칙과 다르게 원하는대로 정렬순서를 지정하고 싶을 때 사용한다.
+> Comparable - 이 인터페이스를 구현한 객체 스스로에게 부여하는 한 가지 기본 정렬 규칙을 설정하는 목적으로 사용한다. <br/>
+> Comparator - 이 인터페이스를 구현한 클래스는 정렬 규칙 그 자체를 의미하며, 기본 정렬 규칙과 다르게 원하는대로 정렬순서를 지정하고 싶을 때 사용한다. <br/>
 >> 출처: https://dev-daddy.tistory.com/23 [대한민국 개발자 아빠]
 
 <br/>
