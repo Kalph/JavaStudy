@@ -31,7 +31,7 @@ JavaStudy
  [03_ValueOf_vs_Parse-](https://github.com/Mulbua/JavaStudy/blob/master/%EC%9D%91%EC%9A%A9_%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0_%EA%B3%B5%EA%B0%84/03_ValueOf_vs_Parse~.md) <br/>
  [04_getClass() vs instanceof](https://github.com/Mulbua/JavaStudy/blob/master/%EC%9D%91%EC%9A%A9_%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0_%EA%B3%B5%EA%B0%84/04_getClass()_vs_instanceof.md) <br/>
  [05_DatePrint](https://github.com/Mulbua/JavaStudy/blob/master/%EC%9D%91%EC%9A%A9_%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0_%EA%B3%B5%EA%B0%84/05_DatePrint.md) <br/>
- [06 Comparator vs Comparable](https://github.com/Kalph/JavaStudy/blob/master/%EC%9D%91%EC%9A%A9_%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0_%EA%B3%B5%EA%B0%84/06_Comparator_vs_Comparable.md) <br/>
+ [06_Comparator vs Comparable](https://github.com/Kalph/JavaStudy/blob/master/%EC%9D%91%EC%9A%A9_%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0_%EA%B3%B5%EA%B0%84/06_Comparator_vs_Comparable.md) <br/>
  
 * miniProject <br/>
 [인생 강화하기 게임](https://github.com/Mulbua/JavaStudy/tree/master/miniProject)<br/>
