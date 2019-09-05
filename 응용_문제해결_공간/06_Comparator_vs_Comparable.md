@@ -115,15 +115,13 @@ public class Run {
 
 <br/>
 
-* Comparable - 일반적인 정렬 - compareTo() 메서드를 구현.
+* Comparable - 일반적인 정렬 - compareTo() 메서드를 구현
 
-* Comparator - 특정한 정렬 - compare() 메서드를 구현.
+* Comparator - 특정한 정렬 - compare() 메서드를 구현
 
 <br/>
 
-**간단하게 요약하자면 comparator은 Collections.sort()를 사용할 때 매개변수를 하나로 받으며
-
-Comparable은 Collections.sort()를 사용할 때 매개변수를 두 개를 받는 식으로 사용하면된다.**
+**간단하게 요약하자면 comparator은 Collections.sort()를 사용할 때 매개변수를 하나로 받으며 Comparable은 Collections.sort()를 사용할 때 매개변수를 두 개를 받는 식으로 사용하면된다.**
 
 <br/>
 
