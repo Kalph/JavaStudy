@@ -162,6 +162,8 @@ public class StartRoom {
 
 또한 위와 같이 for문을 이용해 출력하는 방법도 있다.
 
+<br/>
+
 ### Properties
 
 <br/>
