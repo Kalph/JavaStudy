@@ -100,7 +100,7 @@ public class StartRoom {
 
 <br/>
 
-### Treemap
+### TreeMap
 
 <br/>
 
@@ -114,8 +114,8 @@ public class StartRoom {
 		TreeMap<String, CheckRoom> hm = new TreeMap<>();
 		
 		// 저장된 키와 값 객체를 맵에 저장
-		hm.put("1번", new CheckRoom("김"));
-		hm.put("2번", new CheckRoom("님"));
+		hm.put("2번", new CheckRoom("김"));
+		hm.put("1번", new CheckRoom("님"));
 		System.out.println(hm);
 	}		
 }
@@ -123,7 +123,7 @@ public class StartRoom {
 
 <br/>
 
-저장된 TreeMap객체 hm을 출력할 경우 저장된 순서가 유지됨을 알 수 있다.
+저장된 TreeMap객체 key 값을 기준으로 정렬이 된다.
 
 출력 방식은 HashMap과 동일하다.
 
