@@ -161,3 +161,66 @@ public class StartRoom {
 <br/>
 
 또한 위와 같이 for문을 이용해 출력하는 방법도 있다.
+
+### Properties
+
+<br/>
+
+Properties 클래스는 Hashtables의 하위 클래스이다. <br/>
+ 
+key와 value를 가진다. <br/>
+
+파일 입출력을 지원한다. 
+
+<br/>
+
+```java
+package apartment.myhome;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Properties;
+import java.util.Set;
+
+
+public class StartRoom {
+	public static void main(String[] args) {
+		Properties prop = new Properties();
+		Properties prop2 = new Properties();
+		
+		prop.setProperty("key","value"); // 값 저장
+		System.out.println(prop);
+		System.out.println(prop.getProperty("key")); 
+		
+		Set<Object> keySet = prop.keySet(); // HashTable<Object, Object>로 상속
+		System.out.println(keySet);
+		Iterator<Object> it  = keySet.iterator();
+		System.out.println(it);
+		
+		// 출력 구문
+		while(it.hasNext()) {
+			String key = (String) it.next();
+			System.out.println(key);
+			System.out.println(prop.getProperty(key));
+		}
+		
+		// 저장
+		try {
+			prop.storeToXML(new FileOutputStream("test.xml"), "test");
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
+		
+		// 저장된 test.xml 불러오기
+		System.out.println("test.xml 불러들인 후 출력===");
+		try {
+			prop2.loadFromXML(new FileInputStream("test.xml"));
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
+		System.out.println(prop2);
+	}		
+}
+```
