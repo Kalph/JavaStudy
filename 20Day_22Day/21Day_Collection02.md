@@ -186,6 +186,49 @@ TreeSet은 중복 저장을 못하나 정렬 기준을 가지고 값을 저장�
 ```java
 package apartment.myhome;
 
+public class CheckRoom implements Comparable<CheckRoom>{
+	
+	private String name;
+	
+	public CheckRoom() {	
+	}
+
+	public CheckRoom(String name) {
+		this.name = name;
+	}	
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	public String toString() {
+		return "CheckRoom [name=" + name + "]";
+	}
+
+
+
+	@Override
+	public int compareTo(CheckRoom o) {
+		return name.compareTo(o.getName()); // 올림차순
+//		return o.getName().compareTo(name); // 내림차순
+	}
+	
+	
+
+
+}
+```
+
+<br/>
+
+```java
+package apartment.myhome;
+
 import java.util.Iterator;
 import java.util.TreeSet;
 
@@ -206,7 +249,7 @@ public class StartRoom {
 
 <br/>
 
-상단에서 정의한 CheckRoom 클래스를 이용하여 TreeSet을 사용한다.
+미리 만들어둔 정의한 CheckRoom 클래스를 이용하여 TreeSet을 사용한다.
 
 <br/>
 
