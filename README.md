@@ -36,6 +36,8 @@ JavaStudy
  
 * miniProject <br/>
 [인생 강화하기 게임](https://github.com/Mulbua/JavaStudy/tree/master/miniProject)<br/>
+* miniProject2 <br/>
+[유희왕 미니 카드 게임](https://github.com/Kalph/JavaStudy/tree/master/miniProject2)<br/>
  
 
 
