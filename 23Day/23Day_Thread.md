@@ -2,7 +2,7 @@
 =========
 * [1. 스레드 사용 방법](#1-스레드-사용-방법)<br/><br/>
   * [1-1 Thread 클래스를 상속](#1-1-Thread-클래스를-상속)<br/>
-  * [1-2 runnable 인터페이스를 상속](#C1-2-runnable-인터페이스를-상속)<br/>
+  * [1-2 runnable 인터페이스를 상속](#1-2-runnable-인터페이스를-상속)<br/>
   * [1-3 Demon(), join()](#1-3-Demon(),-join())<br/>
   * [1-4 Interrupt](#1-4-Interrupt)
 
