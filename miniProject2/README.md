@@ -1,9 +1,9 @@
 
 
 > ## 실행화면
-
+11
 <br/>
 
-![sample1](./image/sample1.png)
-![sample2](./image/sample2.png)
-![sample3](.image/sample3.png)
+![sample1](./Image/sample1.png)
+![sample2](./Image/sample2.png)
+![sample3](.Image/sample3.png)
