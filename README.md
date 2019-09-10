@@ -22,7 +22,8 @@ JavaStudy
  16일차 - [API](https://github.com/Mulbua/JavaStudy/tree/master/16Day) <br/>
  17일차 - [예외처리](https://github.com/Mulbua/JavaStudy/tree/master/17Day) <br/>
  (18-19)일차 - [IO(01~02)](https://github.com/Kalph/JavaStudy/tree/master/18Day_19Day) <br/>
- 20일차 - [컬렉션(01~03)](https://github.com/Kalph/JavaStudy/tree/master/20Day_22Day) <br/>
+ (20~22)일차 - [컬렉션(01~03)](https://github.com/Kalph/JavaStudy/tree/master/20Day_22Day) <br/>
+ 23일차 - [스레드](https://github.com/Kalph/JavaStudy/tree/master/23Day) <br/>
  
     
 * 그외 응용 문제해결 공간 <br/>
