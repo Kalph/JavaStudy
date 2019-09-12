@@ -2,8 +2,8 @@
 =========
 * [네트워크](#네트워크 )</br>
 * [소켓 프로그래밍](#소켓-프로그래밍)</br>
-* [TCP](#TCP-TransMission-Control-Protocol)</br>
-* [UDP](#UDP-User-Datagram-Protocol)</br></br>
+* [TCP](#TCPTransMission-Control-Protocol)</br>
+* [UDP](#UDPUser-Datagram-Protocol)</br></br>
 
 
 ## 네트워크 
