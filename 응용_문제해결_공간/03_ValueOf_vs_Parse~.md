@@ -1,6 +1,6 @@
 
 ```java
-String num1 = "hi";
+String num1 = "12";
 ```
 
 <br/>
