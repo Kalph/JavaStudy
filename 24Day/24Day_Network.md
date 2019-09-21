@@ -35,15 +35,15 @@
 </br>
 
 ```java
-	public void start() {
-		// 서버의 포트 번호 설정
+public void start() {
+		// 서버의 포트 번호 설정 
 		int port = 8888;
 		
 		try {
 			// 서버 소켓 port 매개변수를 가진 serverSocket객체 server 생성
 			ServerSocket server = new ServerSocket(port);
 
-			// 아직 client 측에서 연결 요청이 오지 않았음으로 대기
+			// 아직 client 측에서 연결 요청이 오지 않았음으로 대기 - TCP는 연결형 방식임
 			System.out.println("클라 요청 대기 중");
 			
 			// Client 측에서 연결 요청이 올 경우 Socket을 이용해 접속한 정보를 cli에 저장
@@ -92,34 +92,34 @@
 </br>
 
 ```java
-	public void start() {
+public void start() {
 		// 클라이언트 측은 서버의 아이피와 포트번호를 알고 있어야 한다.
 		int port = 8888;
 		// 초기 서버의 아이피는 모른다는 가정을 하고 null을 넣는다.
 		String ser = null;
-		
+
 		try {
 			// ser의 아이피는 내 컴퓨터의 아이피로 설정한다.
 			ser = InetAddress.getLocalHost().getHostAddress();
-			
+
 			// Socket을 통해 아이피, 포트를 넣어주어 soc 변수에 저장함으로 서버에 연결을 시도한다.
-			Socket soc = new Socket(ser,port);
-			
+			Socket soc = new Socket(ser, port);
+
 			// 만일 soc에 값이 담긴다면 정상적으로 연결이 되었음을 의미함.
-			if(soc!=null) {
-				
+			if (soc != null) {
+
 				// ois를 통해 myRoom.dat 파일을 읽어들인다. -> 이 파일을 읽어서 서버측으로 보내면
 				// 서버측에서 받은 정보를 uploaded.dat로 작성하여 저장시킬 것이다.
-				ObjectInputStream ois = new ObjectInputStream(new FileInputStream("myRoom.dat"));
-				
+				ObjectInputStream ois = new ObjectInputStream(new FileInputStream("musicList.dat"));
+
 				ObjectOutputStream oos = new ObjectOutputStream(soc.getOutputStream());
 
 				// br은 서버 측에서 보내는 메시지를 인식하기 위한 변수이다.
 				BufferedReader br = new BufferedReader(new InputStreamReader(soc.getInputStream()));
-				
+
 				try {
 					// 반복문으로 진입.
-					while(true) {
+					while (true) {
 						// obj가 계속해서 myRoom의 정보를 읽어들이게 하고
 						Object obj = ois.readObject();
 						// oos를 통해 읽어들인 정보를 서버측으로 보내준다.
@@ -128,23 +128,23 @@
 						oos.flush();
 					}
 					// 반복문을 탈출하지 못할 경우는 모든 파일을 읽고 나서 오류가 발생할 때 뿐이다. -> 그 오류를 예외처리 한다.(EOFException)
-				} catch(EOFException e) {
+				} catch (EOFException e) {
 					// oos에 null을 넣어 입력함으로 오류가 발생하는 대신 null이 읽어들인 myRoom데이터 마지막에 저장되도록 한다.
 					oos.writeObject(null);
 					oos.flush();
 				}
-				
+
 				// 서버측으로부터 문자를 읽어들여 만일 문자가
 				String rem = br.readLine();
 				// exit라면 서버의 모든 작업이 끝났다는 의미이므로 클라이언트 측도 모든 작업을 종료시켜 준다.
-				if(rem.equals("exit")) {
+				if (rem.equals("exit")) {
 					ois.close();
 					oos.close();
 					br.close();
 					soc.close();
 				}
 			}
-			
+
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -206,25 +206,27 @@ public void start2() {
 			// 서버측 포트 설정. UDP는 비연결형 방식임.
 			int port =8888;
 			// 각각 사용할 변수를 만든다.
-			DatagramSocket soc = new DatagramSocket();
+			DatagramSocket soc = new DatagramSocket(port);
 			DatagramPacket inp,oup;
 			
 			// 클라이언트의 ip를 받아올 msg 변수. 
-			byte[] msg = new byte[4];
+			byte[] msg = new byte[10];
 			byte[] omsg;
 			
 			while(true) {
 				// inp를 통해 클라이언트측에서의 정보를 받아 입력시킨다.
 				inp = new DatagramPacket(msg, msg.length);
+				System.out.println(Arrays.toString(msg));
+				
 				// receive를 통해 inp는 클라이언트가 send()를 통해 입력시키는 정보를 저장하게 된다.
 				soc.receive(inp);
+				System.out.println("서버 받음");
 				
 				// 클라이언트 측의 아피와 포트를 저장해놓는다.
 				InetAddress ad = inp.getAddress();
 				int port2 = inp.getPort();
-				
 				// 서버측에서는 클라이언트 측에 데이터를 입력한 시간을 보낸다.
-				SimpleDateFormat sdf  = new SimpleDateFormat("hh:mm:dd");
+				SimpleDateFormat sdf  = new SimpleDateFormat("hh:mm:ss");
 				String time = sdf.format(new Date());
 				
 				// 서버측에서 클라이언트측에 현재 시간을 보내기 위해 해당 String을 byte로 쪼개 준다.
@@ -242,6 +244,7 @@ public void start2() {
 			e.printStackTrace();
 		}
 	}
+
 ```
 
 </br>
@@ -250,27 +253,28 @@ public void start2() {
 public void start2() {
 		// 서버측에서 전달하는 정보를 받기위한 msg변수 선언
 		byte[] msg = new byte[100];
-		
+
 		try {
 			// 소켓 ds 변수를 만들고
 			DatagramSocket ds = new DatagramSocket();
-			
+
 			// 클라이언트 측에서 서버 측에 먼저 정보를 보낼 것임으로 아이피와 포트를 알고 있어야 함
 			// 따라서 아이피와 포트 정보를 미리 설정하여 저장해준다.
 			InetAddress ser = InetAddress.getLocalHost();
 			int port = 8888;
-			
+
 			// 서버측에 자신의 클라이언트 측의 아이피와 포트를 알리기 위해 패킷을 넣어 보낸다.
 			DatagramPacket ods = new DatagramPacket(msg, 1, ser, port);
 			ds.send(ods);
-
+			System.out.println("클라 측 보냄");
+			
 			// 서버측에서 받은 정보를 ois 변수에 저장시킨다.
 			DatagramPacket ois = new DatagramPacket(msg, msg.length);
 			ds.receive(ois);
+			System.out.println("클라 측 수신 됨");
 			
 			// 바이트 형식이므로 문자열로 변환시켜 출력시켜준다.
-			System.out.println(new String(ois.getData()));
-
+			System.out.println("현재 서버 시간 : " + new String(ois.getData()));
 			ds.close();
 		} catch (SocketException e) {
 			e.printStackTrace();
